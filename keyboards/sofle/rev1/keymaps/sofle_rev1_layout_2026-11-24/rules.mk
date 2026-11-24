@@ -1,2 +1,3 @@
 ENCODER_ENABLE = no
 OLED_DRIVER_ENABLE = yes
+CONVERT_TO = helios
