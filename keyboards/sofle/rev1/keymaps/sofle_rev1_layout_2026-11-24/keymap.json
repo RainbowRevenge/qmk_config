@@ -2,8 +2,8 @@
         "version": 1,
         "author": "",
         "notes": "",
-        "keyboard": "splitkb/aurora/sofle_v2/rev1",
-        "keymap": "splitkb_aurora_sofle_v2_rev1_layout_2026-09-10",
+        "keyboard": "sofle/rev1",
+        "keymap": "sofle_rev1_layout_2026-11-24",
         "layout": "LAYOUT",
         "layers": [
                 [
