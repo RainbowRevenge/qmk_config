@@ -1,6 +1,10 @@
 name: Build QMK firmware
 
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches-ignore:
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -12,9 +16,3 @@ jobs:
     with:
       qmk_repo: qmk/qmk_firmware
       qmk_ref: master
-
-  publish:
-    name: 'QMK Userspace Publish'
-    uses: qmk/.github/.github/workflows/qmk_userspace_publish.yml@main
-    if: always() && !cancelled()
-    needs: build
